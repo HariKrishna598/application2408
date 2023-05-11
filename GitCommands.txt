@@ -1,0 +1,28 @@
+git init - make the repository/directory as working repository for git operations
+ git config --global user.name "Hari Krishna"
+ git config --global user.email rajoliharikrishna72@gmail.com
+
+// Create the user so that we come to know who made changes in the files
+
+git add . --> Initialzie Staging Area
+git status --> To know the files status such as needs to be committed/ committed
+
+git commit -m "This is the initial commit" --> Commit the changes
+git status --> To see the changes tracked or not
+
+git add FileA.txt --> Add the modified file FileA.txt to the staging directory.
+git commit -m "Changes made to FileA" --> Then Commit the changes
+
+git add *.txt --> To add all text files into the staging directory
+git add . --> To add all files into the staging directory
+
+git log --> Shows the recent commits and their ids.
+git log -all --> Show all the commits and their ids.
+git checkout <commit-id> --> Revert the current file/directory changes to that commit-id verson
+
+How to un stage the modified files?
+
+git add.
+git status --> If it shows like head detached to specific commit then change the branch to main or master
+git checkout main
+git checkout master
